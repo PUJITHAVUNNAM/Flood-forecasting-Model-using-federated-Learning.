@@ -1,0 +1,32 @@
+rom tkinter import *
+import tkinter
+from tkinter import filedialog
+import numpy as np
+from tkinter.filedialog import askopenfilename
+import pandas as pd 
+from tkinter import simpledialog
+import matplotlib.pyplot as plt
+import os
+import socket
+import json
+import base64
+from sklearn.metrics import mean_squared_error
+import math
+from keras.layers import Dense, Dropout, Activation, Flatten
+from keras.layers import Convolution2D
+from keras.models import Sequential, load_model
+from keras.callbacks import ModelCheckpoint
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.model_selection import train_test_split
+import matplotlib.pyplot as plt
+from keras.layers import  MaxPooling2D
+import tensorflow as tf
+import random
+main = tkinter.Tk()
+main.title("FFM: Flood Forecasting Model Using Federated Learning")
+main.geometry("1000x650")
+
+global filename, dataset
+global extension_model
+global X, Y, X_train, y_train, X_test, y_test
+global accuracy, mse, rmse, norm1, norm2
